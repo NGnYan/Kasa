@@ -1,0 +1,43 @@
+.collapse {
+  width: 100%;
+  margin: 0px auto 20px auto;
+  border-radius: 8px;
+  overflow: hidden;
+
+  .collapse-header {
+    background-color: #ff6060;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    padding: 12px 16px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+
+    &:hover {
+      background-color: #ff7878;
+    }
+
+    .arrow {
+      display: inline-block;
+      transition: transform 0.3s ease;
+      font-size: 18px;
+
+      &.open {
+        transform: rotate(180deg);
+      }
+    }
+  }
+
+  .collapse-text {
+    background-color: #f7f7f7;
+    color: #000;
+    font-size: 16px;
+    padding: 16px;
+    border-radius: 0 0 8px 8px;
+    line-height: 1.4;
+  }
+}

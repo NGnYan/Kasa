@@ -1,0 +1,16 @@
+.about-page {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* Main */
+.collapse-container {
+  width: 90%;
+  margin: 20px auto 40px auto;
+  flex: 1;
+
+  .collapse:last-child {
+    margin-bottom: 0;
+  }
+}
