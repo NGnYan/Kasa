@@ -1,4 +1,3 @@
-import { Link } from "react-router-dom";
 import "../styles/pages/Home.scss";
 import Navbar from "../components/Navbar";
 import HeaderBanner from "../components/HeaderBanner";
@@ -9,19 +8,24 @@ import accommodations from "../data/accomodation.json";
 
 function Home() {
   return (
-    <>
+    <section>
       <header>
         <Navbar />
         <HeaderBanner img={BannerImg} title="Chez vous, partout et ailleurs" />
       </header>
       <main className="cards-container">
-        {accommodations.map((accomo) => (
-          <Card key={accomo.id} title={accomo.title} cover={accomo.cover} />
+        {accommodations.map((accommo) => (
+          <Card
+            key={accommo.id}
+            id={accommo.id}
+            title={accommo.title}
+            cover={accommo.cover}
+          />
         ))}
       </main>
 
       <Footer title="© 2020 Kasa. All rights reserved" />
-    </>
+    </section>
   );
 }
 
