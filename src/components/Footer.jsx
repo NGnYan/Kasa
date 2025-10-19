@@ -1,4 +1,4 @@
-import "/src/styles/App.scss";
+import "../styles/components/Footer.scss";
 import logo from "../assets/logo-white.png";
 
 function Footer({ title }) {
