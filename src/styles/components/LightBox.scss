@@ -2,7 +2,6 @@
   position: relative;
   margin: 20px 0 20px 0;
   border-radius: 10px;
-  overflow: hidden;
   display: flex;
   justify-content: center;
 
@@ -29,12 +28,12 @@
   }
 
   .arrow-right {
-    right: 25px;
+    right: 6%;
     color: white;
   }
 
   .arrow-left {
-    left: 25px;
+    left: 6%;
     color: white;
   }
 }

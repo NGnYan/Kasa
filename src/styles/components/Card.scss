@@ -23,15 +23,16 @@
     top: 0;
     left: 0;
     width: 100%;
-    height: 75%;
+    height: 100%;
     object-fit: cover;
     z-index: 1;
   }
 
   .accommodation-card-title {
     color: #fff;
+    text-shadow: 0 2px 8px rgb(0, 0, 0);
     font-weight: 700;
-    font-size: 1rem;
+    font-size: 1.2rem;
     line-height: 1.2;
     text-align: left;
     z-index: 2;
@@ -43,9 +44,5 @@
 @media (min-width: 1024px) {
   .accommodation-card {
     border-radius: 10px;
-
-    .accommodation-card-title {
-      font-size: 0.8rem;
-    }
   }
 }

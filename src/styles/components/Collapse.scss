@@ -39,5 +39,10 @@
     padding: 16px;
     border-radius: 0 0 8px 8px;
     line-height: 1.4;
+    list-style: none;
+
+    ul {
+      list-style: none;
+    }
   }
 }

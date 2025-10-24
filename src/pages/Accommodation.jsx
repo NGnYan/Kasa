@@ -13,7 +13,7 @@ function Accommodation() {
   const accommodation = data.find((item) => item.id === id);
 
   if (!accommodation) {
-    return <Navigate to="*" />;
+    return <Navigate to="/404" />;
   }
 
   const {
@@ -45,8 +45,8 @@ function Accommodation() {
         <HostInfo name={host.name} picture={host.picture} rating={rating} />
 
         <div className="accommodation-collapse">
-          <Collapse title="Description" content={description} />
-          <Collapse title="Équipements" content={equipments} />
+          <Collapse title="Description" text={description} />
+          <Collapse title="Équipements" text={equipments} />
         </div>
       </main>
 

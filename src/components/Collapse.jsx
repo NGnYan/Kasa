@@ -8,6 +8,20 @@ function Collapse({ title, text }) {
     setIsOpen(!isOpen);
   };
 
+  let displayedContent;
+
+  if (title === "Équipements" && Array.isArray(text)) {
+    displayedContent = (
+      <ul>
+        {text.map((item, index) => (
+          <li key={index}>{item}</li>
+        ))}
+      </ul>
+    );
+  } else {
+    displayedContent = <p>{text}</p>;
+  }
+
   return (
     <div className="collapse">
       <div className="collapse-header" onClick={toggleCollapse}>
@@ -27,11 +41,7 @@ function Collapse({ title, text }) {
         </span>
       </div>
 
-      {isOpen && (
-        <div className="collapse-text">
-          <p>{text}</p>
-        </div>
-      )}
+      {isOpen && <div className="collapse-text">{displayedContent}</div>}
     </div>
   );
 }
