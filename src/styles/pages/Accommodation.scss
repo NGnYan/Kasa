@@ -1,0 +1,22 @@
+.accommodation-location {
+  margin: 0 5%;
+  .accommodation-location-title {
+    font-size: 1.6rem;
+    line-height: 1.2;
+    font-weight: 500;
+    color: #ff6060;
+    margin-bottom: 10px;
+  }
+
+  .accommodation-location-subtitle {
+    font-size: 1.2rem;
+    color: #111;
+  }
+}
+
+.accommodation-collapse {
+  margin: 0 5% 40px 5%;
+}
+
+@media (min-width: 1024px) {
+}

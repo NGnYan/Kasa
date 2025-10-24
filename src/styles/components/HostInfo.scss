@@ -1,0 +1,56 @@
+.host-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+  margin: 10px auto;
+
+  .stars {
+    display: flex;
+    gap: 4px;
+
+    .star {
+      width: 20px;
+      height: 20px;
+      fill: #e3e3e3;
+      cursor: pointer;
+    }
+
+    .star.filled {
+      fill: #ff6060;
+    }
+  }
+
+  .host-profil {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    .host-name {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      color: #ff6060;
+      font-size: 16px;
+      font-weight: 500;
+      text-align: right;
+      line-height: 1.2;
+    }
+
+    .first-name {
+      font-weight: 400;
+    }
+
+    .last-name {
+      font-weight: 400;
+    }
+
+    .host-picture {
+      width: 64px;
+      height: 64px;
+      border-radius: 50%;
+      object-fit: cover;
+      background-color: #ededed;
+    }
+  }
+}

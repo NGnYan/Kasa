@@ -1,9 +1,24 @@
+import { useState } from "react";
 import "../styles/components/LightBox.scss";
 
-function LightBox({ image, alt, onNext, onPrevious }) {
+function LightBox({ pictures }) {
+  const [currentIndex, setCurrentIndex] = useState(0);
+
+  const onNext = () => {
+    setCurrentIndex((prev) => (prev + 1) % pictures.length);
+  };
+
+  const onPrevious = () => {
+    setCurrentIndex((prev) => (prev - 1 + pictures.length) % pictures.length);
+  };
+
   return (
     <div className="img-box">
-      <img src={image} alt={alt} className="hero-img" />
+      <img
+        src={pictures[currentIndex]}
+        alt={`photo ${currentIndex + 1}`}
+        className="hero-img"
+      />
 
       <button className="arrow arrow-right" onClick={onNext}>
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640">
