@@ -5,7 +5,7 @@
 }
 
 .tag {
-  padding: 5px;
+  padding: 5px 20px;
   background-color: #ff6060;
   color: white;
   font-weight: 600;
@@ -14,4 +14,10 @@
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+@media (min-width: 1024px) {
+  .tag {
+    border-radius: 10px;
+  }
 }
