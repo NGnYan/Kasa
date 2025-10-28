@@ -1,6 +1,6 @@
 import "../styles/pages/Accommodation.scss";
 import { useParams, Navigate } from "react-router-dom";
-import data from "../data/accomodation.json";
+import data from "../data/accommodation.json";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import LightBox from "../components/LightBox";
@@ -36,13 +36,17 @@ function Accommodation() {
       <main>
         <LightBox pictures={pictures} />
 
-        <div className="accommodation-location">
-          <h1 className="accommodation-location-title">{title}</h1>
-          <p className="accommodation-location-subtitle">{location}</p>
-        </div>
+        <div className="accommodation-info">
+          <div>
+            <div className="accommodation-location">
+              <h1 className="accommodation-location-title">{title}</h1>
+              <p className="accommodation-location-subtitle">{location}</p>
+            </div>
+            <Tag tags={tags} />
+          </div>
 
-        <Tag tags={tags} />
-        <HostInfo name={host.name} picture={host.picture} rating={rating} />
+          <HostInfo name={host.name} picture={host.picture} rating={rating} />
+        </div>
 
         <div className="accommodation-collapse">
           <Collapse title="Description" text={description} />

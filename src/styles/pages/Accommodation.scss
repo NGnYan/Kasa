@@ -1,11 +1,11 @@
 .accommodation-location {
-  margin: 0 5%;
+  margin: 0;
   .accommodation-location-title {
     font-size: 1.6rem;
     line-height: 1.2;
     font-weight: 500;
     color: #ff6060;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
   }
 
   .accommodation-location-subtitle {
@@ -17,10 +17,23 @@
 .accommodation-collapse {
   display: flex;
   flex-direction: column;
-  margin: 0 5% 30px 5%;
+  margin: 0 5% 20px 5%;
+}
+
+.accommodation-info {
+  margin: 20px 5%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
 
 @media (min-width: 1024px) {
+  .accommodation-info {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+
   .accommodation-collapse {
     margin: 0 5% 40px 5%;
     flex-direction: row;

@@ -17,7 +17,7 @@ body {
 /* Main */
 .cards-container {
   width: 90%;
-  margin: 40px auto;
+  margin: 25px auto;
   display: grid;
   grid-template-columns: 1fr;
   row-gap: 1.5rem;
@@ -35,9 +35,23 @@ body {
 @media (min-width: 1024px) {
   .cards-container {
     grid-template-columns: repeat(3, 1fr);
+    margin: 40px auto;
     padding: 40px;
     row-gap: 1.5rem;
     column-gap: 2rem;
+    border-radius: 25px;
+    background-color: #f6f6f6;
+  }
+}
+
+@media (min-width: 1440px) {
+  .cards-container {
+    max-width: 1300px;
+    margin: 60px auto;
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 2rem;
+    column-gap: 2.5rem;
+    padding: 60px;
     border-radius: 25px;
     background-color: #f6f6f6;
   }

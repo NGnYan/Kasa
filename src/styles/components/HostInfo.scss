@@ -2,8 +2,8 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 90%;
-  margin: 10px auto 20px auto;
+  width: 100%;
+  margin: 0px auto;
 
   .stars {
     display: flex;
@@ -13,7 +13,6 @@
       width: 20px;
       height: 20px;
       fill: #e3e3e3;
-      cursor: pointer;
     }
 
     .star.filled {
@@ -52,5 +51,16 @@
       object-fit: cover;
       background-color: #ededed;
     }
+  }
+}
+
+@media (min-width: 1024px) {
+  .host-info {
+    flex-direction: column-reverse;
+    justify-content: flex-end;
+    align-items: center;
+    width: auto;
+    margin: 0;
+    gap: 20px;
   }
 }

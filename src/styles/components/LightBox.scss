@@ -37,3 +37,15 @@
     color: white;
   }
 }
+
+@media (min-width: 1024px) {
+  .img-box {
+    .hero-img {
+      width: 90%;
+      height: 400px;
+      object-fit: cover;
+      border-radius: 10px;
+      display: block;
+    }
+  }
+}

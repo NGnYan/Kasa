@@ -4,7 +4,7 @@ import HeaderBanner from "../components/HeaderBanner";
 import BannerImg from "../assets/Image-source-1.png";
 import Card from "../components/Card";
 import Footer from "../components/Footer";
-import accommodations from "../data/accomodation.json";
+import accommodations from "../data/accommodation.json";
 
 function Home() {
   return (
