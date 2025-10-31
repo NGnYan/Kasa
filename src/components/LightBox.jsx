@@ -5,11 +5,11 @@ function LightBox({ pictures }) {
   const [currentIndex, setCurrentIndex] = useState(0);
 
   const onNext = () => {
-    setCurrentIndex((prev) => (prev + 1) % pictures.length);
+    setCurrentIndex((index) => (index + 1) % pictures.length);
   };
 
   const onPrevious = () => {
-    setCurrentIndex((prev) => (prev - 1 + pictures.length) % pictures.length);
+    setCurrentIndex((index) => (index - 1 + pictures.length) % pictures.length);
   };
 
   return (
