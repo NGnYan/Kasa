@@ -20,6 +20,12 @@ function LightBox({ pictures }) {
         className="hero-img"
       />
 
+      <div className="pagination">
+        <p>
+          {currentIndex + 1}/{pictures.length}
+        </p>
+      </div>
+
       <button className="arrow arrow-right" onClick={onNext}>
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640">
           <path

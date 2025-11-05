@@ -14,3 +14,11 @@
     margin-bottom: 0;
   }
 }
+
+@media (min-width: 1024px) {
+  .collapse-container {
+    width: 70%;
+    margin: 20px auto 40px auto;
+    flex: 1;
+  }
+}
